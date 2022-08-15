@@ -25,7 +25,7 @@
    </head>
    <body>
       <!-- navbar start -->
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent w-100 position-fixed">
          <div class="container">
             <a class="navbar-brand" href="#">
                <img src="assets/img/logo_name.svg" alt="" width="130" class="d-inline-block align-text-top">
@@ -88,20 +88,22 @@
       <section id="apa-itu">
          <div class="container">
             <div class="row justify-content-center p-5">
-               <div class="founder col-md-4 d-grid justify-content-center align-items-center gap-2">
+               <div class="founder col-md-4 justify-content-center align-items-center d-grid gap-2">
                   <div class="img">
                      <img src="assets/img/contoh-founder.svg" alt="founder" class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                  </div>
-                  <div class="ket text-center">
-                     <h6 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Nama Lengkap</h6>
-                     <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Status</p>
+                     <div class="ket py-3 text-center">
+                        <h6 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Nama Lengkap</h6>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Status</p>
+                     </div>
                   </div>
                </div>
                <div class="konten col-md-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi odio ullam nemo dolore deleniti, accusamus sequi laborum quas sunt?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi odio ullam nemo dolore deleniti, accusamus sequi laborum quas sunt?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi odio ullam nemo dolore deleniti, accusamus sequi laborum quas sunt?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi odio ullam nemo dolore deleniti, accusamus sequi laborum quas sunt?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora culpa, ipsa voluptatum eligendi quis sed magni officia, cumque sequi incidunt placeat dolore nihil harum debitis doloribus sunt pariatur quas. Accusantium labore voluptates possimus dolore velit commodi nostrum tempora eligendi beatae quam quidem omnis, voluptas voluptatibus facere tenetur, distinctio quibusdam alias necessitatibus quasi, odit et id nam quas! Quibusdam esse ea nostrum unde culpa. Nisi, nesciunt inventore totam officia ad quis sint amet iusto minima deleniti labore doloribus deserunt fugit cupiditate autem quia et exercitationem adipisci magnam iste ex placeat eveniet rem cum! Doloribus odio molestias sequi? Quod, quas? Nostrum, obcaecati.
+                  <span id="readmore"></span><span id="selengkapnya">
+                  <br><br>ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur amet et alias excepturi. A provident autem harum quae, fugit minima veniam iusto quis similique consequuntur, praesentium natus, rerum accusamus nostrum officia dolores quod unde! Reprehenderit libero ad eos sapiente.
+                  </span>
+                  <button onclick="buttonread()" id="more">selengkapnya...</button>
+                  </p>
                </div>
             </div>
          </div>
@@ -121,7 +123,7 @@
                <div class="col-md-4">
                   <div class="card-pilar text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                      <div class="card-icon py-2">
-                        <img src="assets/img/cepat.svg" alt="">
+                        <img src="assets/img/icons8-fast-64.png" alt="pilar" >
                      </div>
                      <div class="card-body py-4">
                         <h6>Cepat</h6>
@@ -132,10 +134,10 @@
                <div class="col-md-4">
                   <div class="card-pilar text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                      <div class="card-icon py-2">
-                        <img src="assets/img/tanpa-batas.svg" alt="">
+                        <img src="assets/img/icons8-infinity-48.png" alt="">
                      </div>
                      <div class="card-body">
-                        <h6>Cepat</h6>
+                        <h6>Tanpa Batas</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt pariatur cumque nostrum nesciunt! Blanditiis.</p>
                      </div>
                   </div>
@@ -143,10 +145,10 @@
                <div class="col-md-4">
                   <div class="card-pilar text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
                      <div class="card-icon py-2">
-                        <img src="assets/img/fleksibel.svg" alt="">
+                        <img src="assets/img/icons8-adaptation-64.png" alt="">
                      </div>
                      <div class="card-body">
-                        <h6>Cepat</h6>
+                        <h6>Efisien & Fleksibel</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt pariatur cumque nostrum nesciunt! Blanditiis.</p>
                      </div>
                   </div>
@@ -161,9 +163,9 @@
       <section id="tujuan">
          <div class="container">
             <div class="row d-flex align-items-center">
-               <div class="konten col-md-6">
+               <div class="konten col-md-6 pe-lg-5">
                   <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Memberikan Pelayanan Terbaik</h3>
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta earum aperiam magni excepturi nobis fuga provident facilis veritatis aspernatur rerum harum quo sunt, perferendis, qui nemo officia? Earum, sed iusto?</p>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ducimus aliquam inventore earum animi fugiat, magni minus corporis dicta a odio, ut exercitationem illo quas nihil itaque temporibus velit numquam labore. Nostrum cupiditate pariatur animi dolor odit rerum provident maiores temporibus atque! Enim, sunt iusto impedit hic dolore quis a autem error animi, laudantium nihil, repellat sit blanditiis? Id at ut quis libero odit maiores iste numquam? Nesciunt esse quam veritatis nostrum doloremque! Voluptatum rem est enim accusamus, ipsa aut error, magni atque voluptatibus perferendis consequuntur harum quo sapiente esse. Vero et obcaecati sed eius similique aliquam sit odio delectus.</p>
                </div>
                <div class="img col-md-6">
                   <img src="assets/img/img-pelayanan.jpg" alt="img-pelayanan" class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
@@ -178,12 +180,12 @@
       <section id="kehadiran">
          <div class="container">
             <div class="row d-flex align-items-center">
-               <div class="konten col-md-6">
-                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Kehadiran HC Untuk Masyarakat</h3>
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta earum aperiam magni excepturi nobis fuga provident facilis veritatis aspernatur rerum harum quo sunt, perferendis, qui nemo officia? Earum, sed iusto?</p>
-               </div>
                <div class="img col-md-6">
                   <img src="assets/img/img-kehadiran.jpg" alt="img-kehadiran" class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+               </div>
+               <div class="konten col-md-6 ps-lg-5">
+                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Kehadiran HC Untuk Masyarakat</h3>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nesciunt iure sed voluptates deserunt possimus iste nulla vitae autem corporis neque, sint atque officiis perspiciatis debitis quo ducimus rem? Et praesentium repudiandae assumenda beatae ab magni consequatur iusto blanditiis itaque illum voluptas unde commodi consectetur odio labore laudantium veritatis, maiores sit ea eligendi recusandae maxime! Eveniet nobis porro expedita illo laboriosam voluptatibus ex fugiat odit at voluptates mollitia delectus, quisquam autem nesciunt neque? Corporis dicta laboriosam illo iure facilis omnis totam, voluptates, necessitatibus adipisci, quisquam quaerat expedita. Mollitia ab ratione nihil voluptas ex, praesentium modi quam, aliquam commodi, est eius.</p>
                </div>
             </div>
          </div>
@@ -196,7 +198,7 @@
          <div class="container justify-content-center">
             <div class="testimoni row d-flex">
                <div class="title col-12 my-5">
-                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Rating Kami Dari Mereka 
+                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Testimonial
                      <br>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
@@ -217,9 +219,9 @@
                </div>
                <div class="konten d-flex justify-content-center col-md-6 py-3">
                   <div class="card" style="width: 18rem;"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                     <div class="card-header3"></div>
+                     <div class="card-header2"></div>
                      <div class="card-body">
-                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi1">
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi2">
                            lihat detail <i class="fa-solid fa-angles-right"></i>
                         </button>
                      </div>
@@ -229,7 +231,7 @@
                   <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
                      <div class="card-header3"></div>
                      <div class="card-body">
-                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi1">
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi3">
                            lihat detail <i class="fa-solid fa-angles-right"></i>
                         </button>
                      </div>
@@ -239,7 +241,7 @@
                   <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                      <div class="card-header4"></div>
                      <div class="card-body">
-                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi1">
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#testi4">
                            lihat detail <i class="fa-solid fa-angles-right"></i>
                         </button>
                      </div>
@@ -264,10 +266,10 @@
                   <div class="container d-grid">
                      <div class="profile row d-flex">
                         <div class="foto col-xl-4 d-flex">
-                           <img src="assets/img/contoh-founder.svg" alt="testi">
+                           <img src="assets/img/modal_mela.png" alt="testi">
                         </div>
                         <div class="nama col-xl-8">
-                           <h4>Nama Lengkap</h4>
+                           <h4>Mela Widia Fusfitasari</h4>
                            <h6>Status</h6>
                         </div>
                      </div>
@@ -308,7 +310,7 @@
                   <div class="container d-grid">
                      <div class="profile row d-flex">
                         <div class="foto col-xl-4 d-flex">
-                           <img src="assets/img/contoh 1.svg" alt="testi">
+                           <img src="assets/img/" alt="testi">
                         </div>
                         <div class="nama col-xl-8">
                            <h4>Nama Lengkap</h4>
@@ -340,6 +342,94 @@
          </div>
       </div>
       <!-- AKHIR MODAL2 -->
+      <!-- MODAL3 -->
+      <div class="modal fade" id="testi3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content rounded-3">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Lihat Kata Mereka</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container d-grid">
+                     <div class="profile row d-flex">
+                        <div class="foto col-xl-4 d-flex">
+                           <img src="assets/img/modal_wima.png" alt="testi">
+                        </div>
+                        <div class="nama col-xl-8">
+                           <h4>Wima Saputra</h4>
+                           <h6>Status</h6>
+                        </div>
+                     </div>
+                     <div class="isi row py-3">
+                        <div class="teks col-12">
+                           <p style="font-size:15px; text-align:justify;">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, vitae. Doloribus amet doloremque explicabo labore dolorum soluta temporibus sapiente ab facilis commodi. Similique laboriosam incidunt ea dicta minus eaque laudantium sapiente necessitatibus nobis, architecto provident deleniti error magni tempore rerum mollitia sed doloremque aliquam ad velit aliquid. Vero, dolorem sequi?
+                           </p>
+                        </div>
+                        <div class="contact col-12 py-4">
+                           <span class="pb-2">
+                              contact :
+                           </span><br>
+                           <a href="">
+                              <i class="fa-brands fa-instagram"></i>
+                              <span>@namaignyaapa</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- AKHIR MODAL3 -->
+      <!-- MODAL4 -->
+      <div class="modal fade" id="testi4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content rounded-3">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Lihat Kata Mereka</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="container d-grid">
+                     <div class="profile row d-flex">
+                        <div class="foto col-xl-4 d-flex">
+                           <img src="assets/img/modal try.png" alt="testi">
+                        </div>
+                        <div class="nama col-xl-8">
+                           <h4>Try Handayani</h4>
+                           <h6>Status</h6>
+                        </div>
+                     </div>
+                     <div class="isi row py-3">
+                        <div class="teks col-12">
+                           <p style="font-size:15px; text-align:justify;">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, vitae. Doloribus amet doloremque explicabo labore dolorum soluta temporibus sapiente ab facilis commodi. Similique laboriosam incidunt ea dicta minus eaque laudantium sapiente necessitatibus nobis, architecto provident deleniti error magni tempore rerum mollitia sed doloremque aliquam ad velit aliquid. Vero, dolorem sequi?
+                           </p>
+                        </div>
+                        <div class="contact col-12 py-4">
+                           <span class="pb-2">
+                              contact :
+                           </span><br>
+                           <a href="">
+                              <i class="fa-brands fa-instagram"></i>
+                              <span>@namaignyaapa</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- AKHIR MODAL4 -->
       <!-- akhir bagian modal -->
 
 
@@ -347,9 +437,9 @@
       <section id="benefit">
          <div class="container">
             <div class="row d-flex align-items-center">
-               <div class="konten col-md-6">
-                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Benefit</h3>
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta earum aperiam magni excepturi nobis fuga provident facilis veritatis aspernatur rerum harum quo sunt, perferendis, qui nemo officia? Earum, sed iusto?</p>
+               <div class="konten col-md-6 pe-lg-5">
+                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Benefit Yang Diberikan</h3>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta assumenda vero exercitationem ex laborum velit, harum repudiandae alias provident voluptate, qui ratione et porro corporis excepturi iure voluptatem inventore a ad est! Ducimus quos maxime est sed sapiente autem earum reprehenderit quas sequi pariatur, ab sunt molestias quibusdam necessitatibus illum vel accusantium voluptate exercitationem quis omnis cum numquam iusto ullam. Quia veritatis ut ullam explicabo quis consequuntur consectetur distinctio fuga voluptatibus debitis sunt mollitia fugiat, voluptas voluptatem animi nisi aliquam, architecto unde deserunt repellendus expedita asperiores consequatur minima quos. Accusamus veniam, sit ducimus sunt quia minima libero tenetur doloremque eaque?</p>
                </div>
                <div class="img col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                   <img src="assets/img/img-benefit.jpg" alt="img-benefit" class="img-fluid">
@@ -384,21 +474,21 @@
                   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                </div>
             </div>
+            <!-- button to top start -->
+            <a href="#"  class="toTop">
+               <div class="square">
+                  <i class="fa-solid fa-arrow-up"></i>
+               </div>
+            </a>
+      <!-- button to top end -->
          </div>
       </section>
       <!-- section contact end -->
 
 
-      <footer class="text-center pt-3">
+      <footer class="text-center">
          <span>© HC, 2022. | built by <a href="https://www.instagram.com/ar1a_manggala/">Ar1a_manggala </a></span>
       </footer>
-
-
-      <!-- button to top start -->
-      <a href="#navbar"  class="toTop position-fixed ">
-         <i class="fa-solid fa-arrow-up"></i>
-      </a>
-      <!-- button to top end -->
 
 
       <!-- script js -->
@@ -409,6 +499,5 @@
       <script>
          AOS.init();
       </script>
-
    </body>
    </html>
